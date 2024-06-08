@@ -7,7 +7,8 @@
     <title>Simple Inventory Management System</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+
 
     <style>
         body{
@@ -57,10 +58,11 @@
     <?php
     require_once 'crud.php';
     require_once 'db_connection.php';
-    $db = new Database("localhost", "root", "", "db_manginasal");
+    $db = new Database("localhost", "root", "", "db_simpleinventory");
 
 // Create an instance of the Product class and inject the database connection
-$item = new Item($db);?>
+$item = new Item($db);
+?>
 
     <div
         class="container-fluid bg-warning text-success p-3"

@@ -2,7 +2,7 @@
 // Instantiate database and get database connection
 require_once 'crud.php';
 require_once 'db_connection.php';
-$db = new Database("localhost", "root", "", "db_manginasal");
+$db = new Database("localhost", "root", "", "db_simpleinventory");
 
 // Create an instance of the Product class and inject the database connection
 $soldItem = new Item($db);
